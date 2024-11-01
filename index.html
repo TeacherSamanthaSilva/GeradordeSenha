@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de Senha</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/scripts.js" defer></script>
   </head>
@@ -18,15 +15,15 @@
     <div id="register-container">
       <div id="register-banner">
         <div id="banner-layer">
-          <h1>Seja bem-vindo</h1>
+          <h1 class="roboto-bold">Seja bem-vindo</h1>
         </div>
       </div>
       <form id="register-form">
-        <h2>Crie sua conta:</h2>
-        <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+        <h2 class="roboto-medium">Crie sua conta:</h2>
+        <p class="roboto-regular">Registre-se para utilizar todas as funcionalidades do sistema</p>
         <div class="form-control">
-          <label for="name">Nome</label>
-          <input
+          <label for="name" class="roboto-light">Nome</label>
+          <input class="roboto-thin"
             type="text"
             name="name"
             id="name"
@@ -34,8 +31,8 @@
           />
         </div>
         <div class="form-control">
-          <label for="email">E-mail</label>
-          <input
+          <label for="email" class="roboto-light">E-mail</label>
+          <input class="roboto-thin"
             type="email"
             name="email"
             id="email"
@@ -43,53 +40,53 @@
           />
         </div>
         <div class="form-control">
-          <label for="password">Senha</label>
-          <input
+          <label for="password" class="roboto-light">Senha</label>
+          <input class="roboto-thin"
             type="password"
             name="password"
             id="password"
             placeholder="Digite a sua senha"
           />
         </div>
-        <p>
+        <p class="roboto-regular">
           Quer ajuda para criar uma senha segura?
-          <span id="open-generate-password">Clique aqui.</span>
+          <span id="open-generate-password" class="roboto-thin">Clique aqui.</span>
         </p>
         <div id="generate-options" class="hide">
-          <p>Selecione as opções que você deseja:</p>
+          <p class="roboto-regular">Selecione as opções que você deseja:</p>
           <div class="form-control">
-            <label for="length">Quantidade de caracteres:</label>
-            <input type="text" id="length" name="length" value="10" />
+            <label for="length" class="roboto-light">Quantidade de caracteres:</label>
+            <input type="text" id="length" name="length" value="10" class="roboto-thin" />
           </div>
           <div class="form-control">
-            <label for="letters">Letras:</label>
-            <input type="checkbox" id="letters" name="letters" checked />
+            <label for="letters" class="roboto-regular">Letras:</label>
+            <input type="checkbox" id="letters" name="letters" checked class="roboto-thin"/>
           </div>
           <div class="form-control">
-            <label for="numbers">Números:</label>
-            <input type="checkbox" id="numbers" name="numbers" checked />
+            <label for="numbers" class="roboto-regular">Números:</label>
+            <input type="checkbox" id="numbers" name="numbers" checked  class="roboto-thin"/>
           </div>
           <div class="form-control">
-            <label for="symbols">Símbolos:</label>
-            <input type="checkbox" id="symbols" name="symbols" checked />
+            <label for="symbols" class="roboto-regular">Símbolos:</label>
+            <input type="checkbox" id="symbols" name="symbols" checked class="roboto-thin" />
           </div>
-          <button id="generate-password">Criar senha</button>
+          <button id="generate-password" class="roboto-regular">Criar senha</button>
         </div>
         <div id="generated-password">
-          <p>Aqui está a sua senha:</p>
-          <h4></h4>
-          <button id="copy-password">Copiar</button>
+          <p class="roboto-regular">Aqui está a sua senha:</p>
+          <h4 class="roboto-bold"></h4>
+          <button id="copy-password" class="roboto-regular">Copiar</button>
         </div>
         <div class="form-control">
-          <label for="confirmpassword">Confirmação de Senha</label>
-          <input
+          <label for="confirmpassword" class="roboto-light">Confirmação de Senha</label>
+          <input class="roboto-thin"
             type="password"
             name="confirmpassword"
             id="confirmpassword"
             placeholder="Confirme a sua senha"
           />
         </div>
-        <input type="submit" value="Cadastrar" />
+        <input type="submit" value="Cadastrar"  class="roboto-regular"/>
       </form>
     </div>
   </body>
